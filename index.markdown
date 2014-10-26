@@ -9,6 +9,7 @@ Ultra Light Box is a lightweight pure JavaScript image gallery inspired by [Ligh
 
 It has no dependencies.
 
+
 ## Supported browsers
 
 * IE8+

@@ -1,6 +1,5 @@
-.ultralb img{
+#container div.ultralb img{
 	border: 3px solid #CCC;
 	cursor: pointer;
-	max-width: 250px;
-	margin: 10px;
+	max-width: 150px;
 }

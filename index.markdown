@@ -19,19 +19,19 @@ It has no dependencies.
 
 * Include the `ultralb.js` file in your html.
 
-```html
+{% highlight html %}
 <script type="text/javascript" src="ultralb.js"></script>
-```
+{% endhighlight %}
 
 * Add images to a container with the class `.ultralb`
 
-```html
+{% highlight html %}
 <div class="ultralb">
 	<img src="image1.jpg" alt="My Image" />
 	<img src="image2.jpg" alt="My Second Image" />
 	<img src="image3.jpg" />
 </div>
-```
+{% endhighlight %}
 
 Multiple containers with the class `.ultralb` can be added, each represent a gallery group.
 

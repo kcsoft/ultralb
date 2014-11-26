@@ -28,7 +28,7 @@ It has no dependencies.
 <div class="ultralb">
 	<img src="image1.jpg" alt="My Image" />
 	<img src="image2.jpg" alt="My Second Image" />
-	<img src="image3.jpg" />
+	<img src="image3.jpg" data-image="image2.jpg" />
 </div>
 ```
 

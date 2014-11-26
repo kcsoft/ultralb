@@ -29,6 +29,9 @@ ultralb = {
 		this.overlay.style.display = this.container.style.display = 'block';
 		var img = new Image();
 		var title = this.allImages[this.currentIndex].getAttribute('alt');
+		var imgUrl = this.allImages[this.currentIndex].getAttribute('data-image');
+		if (!imgUrl || imgUrl == '')
+			imgUrl = this.allImages[this.currentIndex].getAttribute('src');
 
 		img.onload = function() {
 			var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
@@ -39,7 +42,7 @@ ultralb = {
 			_this.imageTitle.innerHTML = title || '&nbsp;';
 			_this.imageIndex.innerHTML = (_this.totalImages>1)?('Image ' + (_this.currentIndex+1) + ' of ' + _this.totalImages):'&nbsp;';
 		};
-		img.src = this.allImages[this.currentIndex].getAttribute('src');
+		img.src = imgUrl;
 	},
 
 	onImgClick: function(images, idx) {
